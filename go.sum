@@ -1,0 +1,4 @@
+github.com/kkdai/twitter v0.1.0 h1:CrRcWzCs7/0SSQCYKXLO/Wwryz7heGVBpCGly9UntpA=
+github.com/kkdai/twitter v0.1.0/go.mod h1:knfH0WG6wa4QfPZa1Gial/zqYIyTA9T8+YPD5WcZZdE=
+github.com/mrjones/oauth v0.0.0-20190623134757-126b35219450 h1:j2kD3MT1z4PXCiUllUJF9mWUESr9TWKS7iEKsQ/IipM=
+github.com/mrjones/oauth v0.0.0-20190623134757-126b35219450/go.mod h1:skjdDftzkFALcuGzYSklqYd8gvat6F1gZJ4YPVbkZpM=
