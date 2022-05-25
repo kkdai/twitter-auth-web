@@ -16,12 +16,12 @@
     }
   ],
   "env": {
-    "ChannelAccessToken": {
-      "description": "Channel Access Token",
+    "ConsumerKey": {
+      "description": "Twitter Consumer Key",
       "required": true
     },
-    "ChannelSecret": {
-      "description": "Channel Secret",
+    "ConsumerSecret": {
+      "description": "Twitter Consumer Secret",
       "required": true
     }
   }
