@@ -14,6 +14,18 @@ Installation and Usage
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+![img](images/heroku_setting.jpg)
+You need to input three parameter for Heroku.
+
+1. CallbackURL: From Heroku, after you design your app name (e.g. example), so it would be "<https://example.herokuapp.com/maketoken>".
+2. ConsumerKey from Twitter Developer, request and create a app for it on <https://developer.twitter.com/en/apps>.
+3. ConsumerSecret from Twitter Developer, request and create a app for it on <https://developer.twitter.com/en/apps>.
+4. Deploy it
+5. Go your address (e.g. <https://example.herokuapp.com/>)
+6. Click the twitter image to authorize.
+![img2](images/auth.jpg)
+7. After authorized, it will show your latest tweet from your timeline.
+
 License
 ---------------
 
