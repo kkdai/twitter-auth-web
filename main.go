@@ -66,7 +66,7 @@ func main() {
 func MainProcess(w http.ResponseWriter, r *http.Request) {
 
 	if !twitterClient.HasAuth() {
-		fmt.Fprintf(w, "<BODY><CENTER><A HREF='/request'><IMG SRC='https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-with-twitter-gray.png'></A></CENTER></BODY>")
+		fmt.Fprintf(w, "<BODY><CENTER><A HREF='/request'><IMG SRC='https://raw.githubusercontent.com/kkdai/twitter-auth-web/master/images/twitter.png'></A></CENTER></BODY>")
 		return
 	} else {
 		//Logon, redirect to display time line
