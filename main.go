@@ -58,7 +58,7 @@ func main() {
 	http.HandleFunc("/user", GetUserDetail)
 	http.HandleFunc("/", MainProcess)
 
-	u := fmt.Sprintf(":%d", *port)
+	u := fmt.Sprintf(":%d", port)
 	fmt.Printf("Listening on '%s'\n", u)
 	http.ListenAndServe(u, nil)
 }
