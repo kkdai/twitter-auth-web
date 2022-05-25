@@ -58,9 +58,9 @@ func main() {
 	http.HandleFunc("/user", GetUserDetail)
 	http.HandleFunc("/", MainProcess)
 
-	u := fmt.Sprintf(":%d", port)
-	fmt.Printf("Listening on '%s'\n", u)
-	http.ListenAndServe(u, nil)
+	addr := fmt.Sprintf(":%s", port)
+	fmt.Printf("Listening on '%s'\n", addr)
+	http.ListenAndServe(addr, nil)
 }
 
 func MainProcess(w http.ResponseWriter, r *http.Request) {
