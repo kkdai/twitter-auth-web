@@ -97,7 +97,7 @@ func GetTwitterToken(w http.ResponseWriter, r *http.Request) {
 	tokenKey := values.Get("oauth_token")
 
 	twitterClient.CompleteAuth(tokenKey, verificationCode)
-	timelineURL := fmt.Sprintf("http://%s/time", r.Host)
+	timelineURL := fmt.Sprintf("https://%s/time", r.Host)
 
 	http.Redirect(w, r, timelineURL, http.StatusTemporaryRedirect)
 }
