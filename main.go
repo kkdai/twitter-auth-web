@@ -23,19 +23,19 @@ import (
 
 var ConsumerKey string
 var ConsumerSecret string
+var CallbackURL string
 var twitterClient *tt.ServerClient
 
 func init() {
 	ConsumerKey = os.Getenv("ConsumerKey")
 	ConsumerSecret = os.Getenv("ConsumerSecret")
-}
 
-const (
 	//This URL need note as follow:
 	// 1. Could not be localhost, change your hosts to a specific domain name
 	// 2. This setting must be identical with your app setting on twitter Dev
-	CallbackURL string = "http://YOURDOMAIN.com/maketoken"
-)
+	// 3. It should be present as "http://YOURDOMAIN.com/maketoken"
+	CallbackURL = os.Getenv("CallbackURL")
+}
 
 func main() {
 
