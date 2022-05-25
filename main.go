@@ -86,10 +86,10 @@ func RedirectUserToTwitter(w http.ResponseWriter, r *http.Request) {
 
 func GetTimeLine(w http.ResponseWriter, r *http.Request) {
 	timeline, bits, _ := twitterClient.QueryTimeLine(1)
-	fmt.Println("TimeLine=", timeline)
-	fmt.Fprintf(w, "The item is: "+string(bits))
-
+	ret := fmt.Sprintf("TimeLine=%v", timeline)
+	fmt.Fprintf(w, ret+" \n\n The item is: "+string(bits))
 }
+
 func GetTwitterToken(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Enter Get twitter token")
 	values := r.URL.Query()
