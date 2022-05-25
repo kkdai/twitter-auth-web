@@ -23,6 +23,10 @@
     "ConsumerSecret": {
       "description": "Twitter Consumer Secret",
       "required": true
+    },
+    "CallbackURL": {
+      "description": "Callback URL from Heroku or your hosted address. It should present as http://YOURDOMAIN.com/maketoken",
+      "required": true
     }
   }
 }
