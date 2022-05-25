@@ -27,6 +27,7 @@ var CallbackURL string
 var twitterClient *tt.ServerClient
 
 func init() {
+	//Twitter Dev Info from https://developer.twitter.com/en/apps
 	ConsumerKey = os.Getenv("ConsumerKey")
 	ConsumerSecret = os.Getenv("ConsumerSecret")
 
@@ -44,11 +45,7 @@ func main() {
 		return
 	}
 
-	var port *int = flag.Int(
-		"port",
-		8888,
-		"Port to listen on.")
-
+	port := os.Getenv("PORT")
 	flag.Parse()
 
 	fmt.Println("[app] Init server key=", ConsumerKey, " secret=", ConsumerSecret)
