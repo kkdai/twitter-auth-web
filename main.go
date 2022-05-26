@@ -68,11 +68,10 @@ func MainProcess(w http.ResponseWriter, r *http.Request) {
 	if !twitterClient.HasAuth() {
 		fmt.Fprintf(w, "<BODY><CENTER><A HREF='/request'><IMG SRC='https://raw.githubusercontent.com/kkdai/twitter-auth-web/master/images/twitter.png'></A></CENTER></BODY>")
 		return
-	} else {
-		//Logon, redirect to display time line
-		timelineURL := fmt.Sprintf("http://%s/time", r.Host)
-		http.Redirect(w, r, timelineURL, http.StatusTemporaryRedirect)
 	}
+	//Logon, redirect to display time line
+	timelineURL := fmt.Sprintf("http://%s/time", r.Host)
+	http.Redirect(w, r, timelineURL, http.StatusTemporaryRedirect)
 }
 
 func RedirectUserToTwitter(w http.ResponseWriter, r *http.Request) {
