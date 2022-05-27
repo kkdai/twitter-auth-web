@@ -1,7 +1,7 @@
 Twitter Auth Website
 ==============
 
- [![GoDoc](https://godoc.org/github.com/kkdai/twitter-auth-web.svg?status.svg)](https://godoc.org/github.com/kkdai/twitter-auth-web) | ![Go](https://github.com/kkdai/twitter-auth-web/workflows/Go/badge.svg) | [![goreportcard.com](https://goreportcard.com/badge/github.com/kkdai/twitter-auth-web)](https://goreportcard.com/report/github.com/kkdai/twitter-auth-web)
+ [![GoDoc](https://godoc.org/github.com/kkdai/twitter-auth-web.svg?status.svg)](https://godoc.org/github.com/kkdai/twitter-auth-web) ![Go](https://github.com/kkdai/twitter-auth-web/workflows/Go/badge.svg) [![goreportcard.com](https://goreportcard.com/badge/github.com/kkdai/twitter-auth-web)](https://goreportcard.com/report/github.com/kkdai/twitter-auth-web)
 
 Installation and Usage
 =============
